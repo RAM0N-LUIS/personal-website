@@ -1,0 +1,164 @@
+
+/* THEME COLORS */
+/*#202837 - dark gray*/
+/*#C3C6D2 - light gray*/
+/*#F3F8F2 - white-ish*/
+/*#66BBD1 - teal*/
+/*#1B44C1 - blue*/
+
+/* GLOBAL STYLES */
+html {
+  /*box-shadow: 0 0 0 30px #000 inset;*/
+  /*padding: 30px;*/
+  background-color: #F3F8F2;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Lato', Helvetica, Arial, Sans;
+  max-width: 650px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.25em;
+}
+p {
+  line-height: 1.5;
+  max-width: 650px;
+}
+.content-container {
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;
+}
+
+/* HEADER STYLES */
+.header {
+  border-bottom: 2px solid #C3C6D2;
+  font-family: 'Oswald', Helvetica, Arial, Sans;
+  position: relative;
+  width: 100%;
+  z-index: 20;
+}
+.logo-container {
+  /*margin-left: 2em;*/
+}
+.header-title {
+  color: #202837;
+  float: left;
+  font-size: 5vh;
+  position: absolute;
+  bottom: 0.20em;
+}
+.header-logo {
+  border-radius: 99px;
+  display: block;
+  float: left;
+  height: 7.5vh;
+  padding-top: 10px;
+  position: relative;
+  vertical-align: middle;
+  width: 7.5vh;
+}
+.header-logo img {
+  border-radius: 99px;
+  display: block;
+  margin: auto;
+  height: 90%;
+  width: auto;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #66BBD1;
+}
+.header-nav {
+  float: right;
+  padding: 4vh 0 0.25em 0;
+}
+.header-nav > li {
+  display: inline-block;
+  padding: 0.25em;
+}
+.header-nav > li ~ li {
+  margin-left: 2em;
+}
+.nav-links a,
+.drop-trigger {
+  color: #202837;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.nav-links li:hover,
+.nav-links li:active {
+  background-color: #66BBD1;
+  border-radius: 5px;
+}
+
+/* HOME STYLES */
+.home {
+  padding: 0 5px;
+}
+
+.home h1 {
+  font-size: 1.5em;
+  line-height: 2.5;
+}
+
+/* POST STYLES */
+.post {
+  /*margin: 2rem auto 2rem 5em;*/
+  padding: 0 25px;
+
+}
+.post h1 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.post-content {
+
+}
+.post-list {
+  line-height: 1.25em;
+}
+.post-list h2 a {
+  color: #1B44C1
+}
+.post-date {
+  color: #C3C6D2;
+  margin-bottom: 1.5em;
+}
+
+/* PROJECTS STYLES*/
+.projects {
+  padding: 0 25px;
+}
+.projects h1 {
+  font-size: 1.5em;
+  line-height: 2.5;
+}
+.project {
+  border-bottom: 1px solid #C3C6D2;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.project-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.project-description {
+  margin: 10px 0;
+}
+.project-graphic {
+  border-radius: 7px;
+}
+.project-graphic img {
+  border-radius: 7px;
+}
+
+/* ABOUT STYLES */
+.about {    
+  padding: 0 25px;
+}
+

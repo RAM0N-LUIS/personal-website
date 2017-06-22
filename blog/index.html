@@ -1,0 +1,19 @@
+---
+layout: default
+title: Personal Blog of Ramon Luis
+description: Writings about computer science and other topics.
+---
+<div class="blog-index">
+	<h1>Writings About Computer Science and Other Topics</h1>
+	<div class="col-two blog cols">
+		<div class="col col-aside blog-list">
+			{% include posts-list.html %}
+		</div>
+		<div class="col col-content blog-previews">
+			{% for post in site.posts %}
+				{{ post.content }}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
