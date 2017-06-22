@@ -56,11 +56,12 @@ p {
   border-radius: 99px;
   display: block;
   float: left;
-  height: 7.5vh;
-  padding-top: 10px;
+  height: 7.0vh;
+  margin-top: 12px;
+  padding-top: 2px;
   position: relative;
   vertical-align: middle;
-  width: 7.5vh;
+  width: 7.0vh;
 }
 .header-logo img {
   border-radius: 99px;
