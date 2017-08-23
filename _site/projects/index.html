@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<head>
+
+		<head>
 	<!-- Meta tags: Title, Description, etc. -->
 	<title>Ramon Luis</title>
 	<meta name="description" content="This is the personal website of Ramon Luis Rodriguez.">
@@ -16,46 +17,52 @@
 </head>
 
 
-	<body>
-		<header class="header">
+		<body>
+			<header class="header">
 	
 	<nav>	
 		<!-- ADD MOBILE HERE? -->
 		
-		<ul class="header-nav nav-links">
-
-			<li><a href="/">Home</a></li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="/about">About</a></li>
-
-		</ul>
-	</nav>
-	<div class="logo-container">
-	<a href="/" class="header-logo">
-		<img src="/images/coldwarvet.jpg" alt="Monkey Astronaut">
 		<a href="/" class="header-title">
 			<h1>Ramon-Luis</h1>
 		</a>
-	</a>
+		<ul class="header-nav nav-links">
+			<li><a href="/">Home</a></li>
+<li><a href="/projects">Projects</a></li>
+<li><a href="https://github.com/ramon-luis?tab=repositories" target="_blank">GitHub</a></li>
+
+		</ul>
+	</nav>
 	
-	</div>
 </header>
 
-		<div class="content-container">
-			<div class="projects">
+			<div class="content-container">
+				<div class="projects">
 	<div class="projects-header">
 		<h1>Projects</h1>
 		<p>
-			Below are some personal projects I've completed.
+			Below are a few things I've built.  See more at my <a href="https://github.com/ramon-luis?tab=repositories" target="_blank">github</a>. 
 		</p>
 	</div>
 
+	<!-- Chicago Crime & Weather -->
 	<div class="project">
-		<h2 class="project-title">Super Bomberman</h2>
-		<a href="https://github.com/ramon-luis/super-bomberman">github.com/ramon-luis/super-bomberman</a>
+		<h2 class="project-title">Big Data: Chicago Crime &amp; Weather</h2>
+		<a href="https://github.com/ramon-luis/chicago-crime-and-weather" target="_blank">github.com/ramon-luis/chicago-crime-and-weather</a>
 		<div class="project-description">
 			<p>
-				<b>A multi-threaded Java game</b> that mimics the original <a href="https://en.wikipedia.org/wiki/Super_Bomberman">Super Bomberman</a> video game for the Nintendo Entertainment System.  The player competes against the computer by attempting to use bombs to destroy enemies and clear the game map.  A secret door to complete each level is revealed after all enemies have been defeated.  Power-ups with special abilities are available to help the player defeat increasingly difficult enemies.
+				<b>A big data project</b> that uses <a href="https://en.wikipedia.org/wiki/Lambda_architecture" target="_blank">lambda architecture</a> to explore the relationship between weather and crime in Chicago.  Raw weather data from the <a href="ftp://ftp.ncdc.noaa.gov/pub/data/gsod/" target="_blank">NOAA</a> is ingested as a sequence file into a <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#Hadoop_distributed_file_system" target="_blank">Hadoop Distributed File System (HDFS)</a> using Java, while crime data from the <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2017/d62x-nvdr" target="_blank">Chicago public database</a> is stored in the same HDFS in CSV format.  <a href="https://en.wikipedia.org/wiki/Pig_(programming_tool)" target="_blank">Pig</a> scripts pre-compute crime reports with final relevant weather and crime data joined into a single table that is grouped and stored in <a href="https://en.wikipedia.org/wiki/Apache_HBase" target="_blank">HBase</a>, a non-relational, distributed database.  A web application uses a Perl script to either pull existing crime &amp; weather data or submit new crime &amp; weather data to a <a href="https://en.wikipedia.org/wiki/Apache_Kafka" target="_blank">Kafka</a> message queue for processing into the Hbase table.
+			</p>
+		</div>
+	</div>
+
+	<!-- Super Bomberman -->
+	<div class="project">
+		<h2 class="project-title">Super Bomberman</h2>
+		<a href="https://github.com/ramon-luis/super-bomberman" target="_blank">github.com/ramon-luis/super-bomberman</a>
+		<div class="project-description">
+			<p>
+				<b>A multi-threaded Java game</b> that mimics the original <a href="https://en.wikipedia.org/wiki/Super_Bomberman" target="_blank">Super Bomberman</a> video game for the Nintendo Entertainment System.  The player competes against the computer by attempting to use bombs to destroy enemies and clear the game map.  A secret door to complete each level is revealed after all enemies have been defeated.  Power-ups with special abilities are available to help the player defeat increasingly difficult enemies.
 			</p>
 		</div>
 		<div class="project-graphic">
@@ -63,17 +70,18 @@
 				<iframe src="https://giphy.com/embed/YuDtbUfbs2WVW" width="100%" height="100%" allowFullScreen></iframe>
 			</div>
 			<p>
-				<a href="https://giphy.com/gifs/YuDtbUfbs2WVW">via GIPHY</a>
+				<a href="https://giphy.com/gifs/YuDtbUfbs2WVW" target="_blank">via GIPHY</a>
 			</p>
 		</div>
 	</div>
 
+	<!-- JumbleJam -->
 	<div class="project">
 		<h2 class="project-title">Jumble Jam</h2>
-		<a href="https://github.com/ramon-luis/jumble-jam">github.com/ramon-luis/jumble-jam</a>
+		<a href="https://github.com/ramon-luis/jumble-jam" target="_blank">github.com/ramon-luis/jumble-jam</a>
 		<div class="project-description">
 			<p>
-				<b>An iOS puzzle game built with Swift</b> that allows users to create <a href="https://en.wikipedia.org/wiki/Sliding_puzzle">sliding puzzles</a> from a gallery of beautiful, high-resolution photos or from their own personal photo gallery.  Users can vary the puzzle difficulty (i.e. the number of pieces), jumble the pieces into new random locations, or press a button to magically solve the puzzle.
+				<b>An iOS puzzle game built with Swift</b> that allows users to create <a href="https://en.wikipedia.org/wiki/Sliding_puzzle" target="_blank">sliding puzzles</a> from a gallery of beautiful, high-resolution photos or from their own personal photo gallery.  Users can vary the puzzle difficulty (i.e. the number of pieces), jumble the pieces into new random locations, or press a button to magically solve the puzzle.
 			</p>
 		</div>
 		<div class="project-graphic">
@@ -81,19 +89,103 @@
 				<iframe src="https://giphy.com/embed/13eUX0gaE7x5Ju" width="100%" height="100%" allowFullScreen></iframe>
 			</div>
 			<p>
-				<a href="https://giphy.com/gifs/13eUX0gaE7x5Ju">via GIPHY</a>
+				<a href="https://giphy.com/gifs/13eUX0gaE7x5Ju" target="_blank">via GIPHY</a>
 			</p>
-		<!-- 	<div style="width:100%;height:0;padding-bottom:182%;position:relative;">
-				<iframe src="https://giphy.com/embed/nmtBk6RySMlIA" width="70%" height="70%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/nmtBk6RySMlIA">via GIPHY</a>
-			</p> -->
 		</div>
 	</div>
+
+	<!-- Picture This -->
+	<div class="project">
+		<h2 class="project-title">Picture This</h2>
+		<a href="https://github.com/ramon-luis/picture-this" target="_blank">github.com/ramon-luis/picture-this</a>
+		<div class="project-description">
+			<p>
+				<b>An image editor built with JavaFX</b>.  The program uses <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" target="_blank">lambda expressions</a> to take advantage of the <a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">functional programming</a> capabilities of Java8.
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:57%;position:relative;">
+				<iframe src="https://giphy.com/embed/HaGbMi0Ph2pck" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/HaGbMi0Ph2pck" target="_blank">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Zoo In There -->
+	<div class="project">
+		<h2 class="project-title">It's a Zoo in There</h2>
+		<a href="https://github.com/ramon-luis/zoo-in-there" target="_blank">github.com/ramon-luis/zoo-in-there</a>
+		<div class="project-description">
+			<p>
+				<b>An educational iOS app</b> that contains a gallery of highly unusual animal images and facts.  
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:120%;position:relative;">
+				<iframe src="https://giphy.com/embed/rI0h2SOKg9w08" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/rI0h2SOKg9w08" target="_blank">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Ticket Search -->
+	<div class="project">
+		<h2 class="project-title">Ticket Search</h2>
+		<a href="https://github.com/ramon-luis/ticket-search" target="_blank">github.com/ramon-luis/ticket-search</a>
+		<div class="project-description">
+			<p>
+				<b>A Java web application</b> that uses the SeatGeek API to search for event tickets.  
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:61%;position:relative;">
+				<iframe src="https://giphy.com/embed/c7BwRWx7Ya5xu" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/c7BwRWx7Ya5xu" target="_blank">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Movie Monster -->
+	<div class="project">
+		<h2 class="project-title">Movie Monster</h2>
+		<a href="https://github.com/ramon-luis/movie-monster" target="_blank">github.com/ramon-luis/movie-monster</a>
+		<div class="project-description">
+			<p>
+				<b>A Spring Boot web application</b> that tracks information about movies.
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:78%;position:relative;">
+				<iframe src="https://giphy.com/embed/RMxq8WetdsV5m" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/RMxq8WetdsV5m" target="_blank">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
 </div>
 
-		</div>
-		
-	</body>
+			</div>
+
+			<footer class="footer">
+
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+		<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+	</a>
+	<div class="copyright">
+		This work is licensed under a <br><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+	</div>
+
+</footer>
+
+			
+		</body>
+
 </html>

@@ -8,8 +8,8 @@
 
 /* GLOBAL STYLES */
 html {
-  /*box-shadow: 0 0 0 30px #000 inset;*/
-  /*padding: 30px;*/
+  box-shadow: 0 0 0 15px #202837 inset;
+  padding: 15px;
   background-color: #F3F8F2;
 }
 body {
@@ -98,6 +98,23 @@ p {
   border-radius: 5px;
 }
 
+/* FOOTER STYLES */
+.footer {
+  padding: 10px auto auto 10px;
+  
+}
+.footer img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+.copyright {
+  font-size: 0.75em;
+  font-family: 'Lato', Helvetica, Arial, Sans;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 /* HOME STYLES */
 .home {
   padding: 0 5px;
@@ -107,30 +124,6 @@ p {
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 20px;
-}
-
-/* POST STYLES */
-.post {
-  /*margin: 2rem auto 2rem 5em;*/
-  padding: 0 25px;
-
-}
-.post h1 {
-  font-size: 1.5em;
-  line-height: 1.5;
-}
-.post-content {
-
-}
-.post-list {
-  line-height: 1.25em;
-}
-.post-list h2 a {
-  color: #1B44C1
-}
-.post-date {
-  color: #C3C6D2;
-  margin-bottom: 1.5em;
 }
 
 /* PROJECTS STYLES*/
@@ -163,6 +156,30 @@ p {
 .project-graphic iframe {
   display: block;
   margin: 15px auto 0 auto;
+}
+
+/* POST STYLES */
+.post {
+  /*margin: 2rem auto 2rem 5em;*/
+  padding: 0 25px;
+
+}
+.post h1 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.post-content {
+
+}
+.post-list {
+  line-height: 1.25em;
+}
+.post-list h2 a {
+  color: #1B44C1
+}
+.post-date {
+  color: #C3C6D2;
+  margin-bottom: 1.5em;
 }
 
 /* ABOUT STYLES */
