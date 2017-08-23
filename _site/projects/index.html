@@ -32,7 +32,7 @@
 	</nav>
 	<div class="logo-container">
 	<a href="/" class="header-logo">
-		<img src="/images/coldwarvet.jpg" alt="Monkey Astronaut">
+		<img src="/images/cubs-glasses.jpg" alt="Chicago Cubs logo wearing eye glasses">
 		<a href="/" class="header-title">
 			<h1>Ramon-Luis</h1>
 		</a>
@@ -50,6 +50,7 @@
 		</p>
 	</div>
 
+	<!-- Super Bomberman -->
 	<div class="project">
 		<h2 class="project-title">Super Bomberman</h2>
 		<a href="https://github.com/ramon-luis/super-bomberman">github.com/ramon-luis/super-bomberman</a>
@@ -68,6 +69,7 @@
 		</div>
 	</div>
 
+	<!-- JumbleJam -->
 	<div class="project">
 		<h2 class="project-title">Jumble Jam</h2>
 		<a href="https://github.com/ramon-luis/jumble-jam">github.com/ramon-luis/jumble-jam</a>
@@ -83,14 +85,99 @@
 			<p>
 				<a href="https://giphy.com/gifs/13eUX0gaE7x5Ju">via GIPHY</a>
 			</p>
-		<!-- 	<div style="width:100%;height:0;padding-bottom:182%;position:relative;">
-				<iframe src="https://giphy.com/embed/nmtBk6RySMlIA" width="70%" height="70%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/nmtBk6RySMlIA">via GIPHY</a>
-			</p> -->
 		</div>
 	</div>
+
+	<!-- Chicago Crime & Weather -->
+	<div class="project">
+		<h2 class="project-title">Big Data: Chicago Crime &amp; Weather</h2>
+		<a href="https://github.com/ramon-luis/chicago-crime-and-weather">github.com/ramon-luis/chicago-crime-and-weather</a>
+		<div class="project-description">
+			<p>
+				<b>A big data project</b> that uses <a href="https://en.wikipedia.org/wiki/Lambda_architecture">lambda architecture</a> to explore the relationship between weather and crime in Chicago.  Raw weather data from the <a href="ftp://ftp.ncdc.noaa.gov/pub/data/gsod/">NOAA</a> is ingested as a sequence file into a <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#Hadoop_distributed_file_system">Hadoop Distributed File System (HDFS)</a> using Java, while crime data from the <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2017/d62x-nvdr">Chicago public database</a> is stored in the same HDFS in CSV format.  <a href="https://en.wikipedia.org/wiki/Pig_(programming_tool)">Pig</a> scripts pre-compute crime reports with final relevant weather and crime data joined into a single table that is grouped and stored in <a href="https://en.wikipedia.org/wiki/Apache_HBase">HBase</a>, a non-relational, distributed database.  A web application uses a Perl script to either pull existing crime &amp; weather data or submit new crime &amp; weather data to a <a href="https://en.wikipedia.org/wiki/Apache_Kafka">Kafka</a> message queue for processing into the Hbase table.
+			</p>
+		</div>
+	<!-- 	<div class="project-graphic">
+			<div style="max-width:100px; padding-bottom:70%; position:relative;">
+				<img src="/images/handcuffs.jpeg" alt="handcuffs">
+			</div>
+		</div> -->
+	</div>
+
+	<!-- Picture This -->
+	<div class="project">
+		<h2 class="project-title">Picture This</h2>
+		<a href="https://github.com/ramon-luis/picture-this">github.com/ramon-luis/picture-this</a>
+		<div class="project-description">
+			<p>
+				<b>An image editor built with JavaFX</b>.  The program uses <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">lambda expressions</a> to take advantage of the <a href="https://en.wikipedia.org/wiki/Functional_programming">functional programming</a> capabilities of Java8.
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:120%;position:relative;">
+				<iframe src="https://giphy.com/embed/HaGbMi0Ph2pck" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/HaGbMi0Ph2pck">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
+
+	<!-- Ticket Search -->
+	<div class="project">
+		<h2 class="project-title">Ticket Search</h2>
+		<a href="https://github.com/ramon-luis/ticket-search">github.com/ramon-luis/ticket-search</a>
+		<div class="project-description">
+			<p>
+				<b>A Java web application</b> that uses the SeatGeek API to search for event tickets.  
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:120%;position:relative;">
+				<iframe src="https://giphy.com/embed/c7BwRWx7Ya5xu" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/c7BwRWx7Ya5xu">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Web Server -->
+	<div class="project">
+		<h2 class="project-title">HTTPS Web Server</h2>
+		<a href="https://github.com/ramon-luis/web-server">github.com/ramon-luis/web-server</a>
+		<div class="project-description">
+			<p>
+				<b>An HTTPS web server built in Java</b> that allows for multiple, persistent connections.  The server handles standard HTTP requests, including GET, HEAD, and POST.  The server can accomodate both HTTP and HTTPS, as well as redirects and proper error handling for invalid requests.
+			</p>
+		</div>
+		<!-- <div class="project-graphic">
+			<div style="max-width:100px; padding-bottom:70%; position:relative;">
+				<img src="/images/network-cables.jpeg" alt="network cables">
+			</div>
+		</div> -->
+	</div>
+
+	<!-- Blackjack -->
+	<div class="project">
+		<h2 class="project-title">Blackjack</h2>
+		<a href="https://github.com/ramon-luis/blackjack">github.com/ramon-luis/blackjack</a>
+		<div class="project-description">
+			<p>
+				<b>A single player blackjack game built with Java Swing.</b>
+			</p>
+		</div>
+		<div class="project-graphic">
+			<div style="width:100%;height:0;padding-bottom:120%;position:relative;">
+				<iframe src="https://giphy.com/embed/EhQrKNPpKdwAM" width="100%" height="100%" allowFullScreen></iframe>
+			</div>
+			<p>
+				<a href="https://giphy.com/gifs/EhQrKNPpKdwAM">via GIPHY</a>
+			</p>
+		</div>
+	</div>
+
 </div>
 
 		</div>
