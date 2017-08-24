@@ -8,9 +8,10 @@
 
 /* GLOBAL STYLES */
 html {
-  /*box-shadow: 0 0 0 30px #000 inset;*/
-  /*padding: 30px;*/
+  box-shadow: 0 0 0 20px #202837 inset;
+  padding: 20px;
   background-color: #F3F8F2;
+
 }
 body {
   display: flex;
@@ -98,16 +99,48 @@ p {
   border-radius: 5px;
 }
 
+/* FOOTER STYLES */
+.footer {
+  font-family: 'Lato', Helvetica, Arial, Sans;
+  font-size: 0.75em;
+  text-align: center;
+  padding: 5px auto;
+  margin: 5px auto;
+
+}
+.copyright {
+
+}
+
 /* HOME STYLES */
 .home {
   padding: 0 5px;
 }
-
+.home:after {
+  display: table;
+  clear: both;
+}
 .home h1 {
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 20px;
 }
+.home-left {
+  float: left;
+  width: 40%;
+}
+.home-left img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+
+}
+.home-right {
+  float: right;
+  width: 55%;
+}
+
+
 
 /* POST STYLES */
 .post {
