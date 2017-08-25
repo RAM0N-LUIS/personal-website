@@ -19,7 +19,7 @@ $ gem install jekyll
 Fork, clone, and go!  Use Jekyll to run locally.
 
 ```
-jekyll serve
+$ jekyll serve
 ```
 
 ## Deployment
@@ -40,7 +40,7 @@ This one's kind of a one-man show...
 
 ## Authors
 
-* **Ramon-Luis** - *Initial work* - [www.ramon-luis.com](https://www.ramon-luis.com)
+* [**Ramon-Luis**](https://github.com/ramon-luis)
 
 ## Acknowledgments
 
