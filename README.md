@@ -6,7 +6,6 @@ My personal website that contains information about me.
 
 The project uses [Jekyll and Github Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/) with a dash of HTML and CSS... pretty basic stuff!
 
-
 ### Prerequisites
 
 [Jekyll](https://jekyllrb.com/)
@@ -26,19 +25,16 @@ $ jekyll serve
 
 Depoloyed with [GitHub Pages](https://pages.github.com/)
 
-
 ## Built With
 
 * [Jekyll](https://jekyllrb.com/) - The web framework used
 * [Github Pages](https://pages.github.com/) - Dependency Management
 
-
 ## Contributing
 
 This one's kind of a one-man show...
 
-
-## Authors
+## Author
 
 * [**Ramon-Luis**](https://github.com/ramon-luis)
 
