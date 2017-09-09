@@ -23,16 +23,12 @@ $ jekyll serve
 
 ## Deployment
 
-Depoloyed with [GitHub Pages](https://pages.github.com/)
+Deployed with [GitHub Pages](https://pages.github.com/)
 
 ## Built With
 
-* [Jekyll](https://jekyllrb.com/) - The web framework used
-* [Github Pages](https://pages.github.com/) - Dependency Management
-
-## Contributing
-
-This one's kind of a one-man show...
+* [Jekyll](https://jekyllrb.com/)
+* [Github Pages](https://pages.github.com/)
 
 ## Author
 
@@ -40,4 +36,4 @@ This one's kind of a one-man show...
 
 ## Acknowledgments
 
-* Thanks to Michael Hartl's [Learn Enough to be Dangerous](https://www.learnenough.com/) tutorial for the web skills!
+* Thanks to Michael Hartl's [Learn Enough to be Dangerous](https://www.learnenough.com/)
