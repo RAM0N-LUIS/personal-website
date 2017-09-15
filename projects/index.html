@@ -18,7 +18,11 @@ description: A few things that Ramon-Luis has built
 		<a href="https://github.com/ramon-luis/chicago-crime-and-weather" target="_blank">github.com/ramon-luis/chicago-crime-and-weather</a>
 		<div class="project-description">
 			<p>
-				<b>A big data project</b> that uses <a href="https://en.wikipedia.org/wiki/Lambda_architecture" target="_blank">lambda architecture</a> to explore the relationship between weather and crime in Chicago.  Raw weather data from the <a href="ftp://ftp.ncdc.noaa.gov/pub/data/gsod/" target="_blank">NOAA</a> is ingested as a sequence file into a <a href="https://en.wikipedia.org/wiki/Apache_Hadoop#Hadoop_distributed_file_system" target="_blank">Hadoop Distributed File System (HDFS)</a> using Java, while crime data from the <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2017/d62x-nvdr" target="_blank">Chicago public database</a> is stored in the same HDFS in CSV format.  <a href="https://en.wikipedia.org/wiki/Pig_(programming_tool)" target="_blank">Pig</a> scripts pre-compute crime reports with final relevant weather and crime data joined into a single table that is grouped and stored in <a href="https://en.wikipedia.org/wiki/Apache_HBase" target="_blank">HBase</a>, a non-relational, distributed database.  A web application uses a Perl script to either pull existing crime &amp; weather data or submit new crime &amp; weather data to a <a href="https://en.wikipedia.org/wiki/Apache_Kafka" target="_blank">Kafka</a> message queue for processing into the Hbase table.
+				<b>A big data web application</b> that analyzes the relationship between weather and violent crime in Chicago daily from 2001-2016. The application uses a  <a href="https://en.wikipedia.org/wiki/Lambda_architecture" target="_blank">lambda architecture</a> to process large amounts of data: data from multiple sources is serialized and grouped together into a single, fact-based distrubuted data table with common queries pre-computed in batch processing while a separate speed layer handles new data that has not yet been batch processed.
+			</p>
+			<br />
+			<p>
+				The application was hosted <a href="http://cloud.google.com" target="_blank">Google Cloud<a/> and built with Apache tools, including: <a href="http://hadoop.apache.org/" target="_blank">Hadoop</a>, <a href="http://hbase.apache.org/" target="_blank">HBase<a/>, <a href="http://kafka.apache.org" target="_blank">Kafka</a>, <a href="http://pig.apache.org" target="_blank">Pig</a>, <a href="http://spark.apache.org" target="_blank">Spark</a>, <a href="http://storm.apache.org" target="_blank">Storm</a>, and <a href="http://thrift.apache.org" target="_blank">Thrift<a/>.
 			</p>
 		</div>
 	</div>
@@ -33,7 +37,7 @@ description: A few things that Ramon-Luis has built
 			</p>
 		</div>
 		<div class="project-graphic">
-			<img src="https://github.com/ramon-luis/super-bomberman/raw/master/demo/super-bomberman-screenshot-5.png">
+			<img src="/images/screenshots/super-bomberman-screenshot-4.png" alt="super bomberman"/>
 		</div>
 	</div>
 
@@ -43,16 +47,11 @@ description: A few things that Ramon-Luis has built
 		<a href="https://github.com/ramon-luis/jumble-jam" target="_blank">github.com/ramon-luis/jumble-jam</a>
 		<div class="project-description">
 			<p>
-				<b>An iOS puzzle game built with Swift</b> that allows users to create <a href="https://en.wikipedia.org/wiki/Sliding_puzzle" target="_blank">sliding puzzles</a> from a gallery of beautiful, high-resolution photos or from their own personal photo gallery.  Users can vary the puzzle difficulty (i.e. the number of pieces), jumble the pieces into new random locations, or press a button to magically solve the puzzle.
+				<b>An iOS puzzle game built with Swift</b> that allows users to create <a href="https://en.wikipedia.org/wiki/Sliding_puzzle" target="_blank">sliding puzzles</a> from a gallery of beautiful, high-resolution photos or from their own personal photo gallery.  Users can vary the puzzle difficulty, jumble the pieces into new random locations, or press a button to magically solve the puzzle.
 			</p>
 		</div>
 		<div class="project-graphic">
-			<div style="width:100%;height:0;padding-bottom:120%;position:relative;">
-				<iframe src="https://giphy.com/embed/13eUX0gaE7x5Ju" width="100%" height="100%" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/13eUX0gaE7x5Ju" target="_blank">via GIPHY</a>
-			</p>
+			<img src="/images/screenshots/jumble-jam-screenshot-3.png" alt="jumble jam"/>
 		</div>
 	</div>
 
@@ -62,16 +61,11 @@ description: A few things that Ramon-Luis has built
 		<a href="https://github.com/ramon-luis/picture-this" target="_blank">github.com/ramon-luis/picture-this</a>
 		<div class="project-description">
 			<p>
-				<b>An image editor built with JavaFX</b>.  The program uses <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" target="_blank">lambda expressions</a> to take advantage of the <a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">functional programming</a> capabilities of Java8.
+				<b>An image editor built with JavaFX</b>.  The code uses <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" target="_blank">lambda expressions</a> to take advantage of the <a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank">functional programming</a> capabilities of Java8.
 			</p>
 		</div>
 		<div class="project-graphic">
-			<div style="width:100%;height:0;padding-bottom:57%;position:relative;">
-				<iframe src="https://giphy.com/embed/HaGbMi0Ph2pck" width="100%" height="100%" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/HaGbMi0Ph2pck" target="_blank">via GIPHY</a>
-			</p>
+			<img src="/images/screenshots/picture-this-screenshot-1.png" alt="picture this"/>
 		</div>
 	</div>
 
@@ -85,12 +79,7 @@ description: A few things that Ramon-Luis has built
 			</p>
 		</div>
 		<div class="project-graphic">
-			<div style="width:100%;height:0;padding-bottom:120%;position:relative;">
-				<iframe src="https://giphy.com/embed/rI0h2SOKg9w08" width="100%" height="100%" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/rI0h2SOKg9w08" target="_blank">via GIPHY</a>
-			</p>
+			<img src="/images/screenshots/zoo-in-there-screenshot-3.png" alt="zoo in there"/>
 		</div>
 	</div>
 
@@ -100,16 +89,11 @@ description: A few things that Ramon-Luis has built
 		<a href="https://github.com/ramon-luis/ticket-search" target="_blank">github.com/ramon-luis/ticket-search</a>
 		<div class="project-description">
 			<p>
-				<b>A Java web application</b> that uses the SeatGeek API to search for event tickets.  
+				<b>A Java web application</b> that allows users to search for event tickets via SeatGeek's API. 
 			</p>
 		</div>
 		<div class="project-graphic">
-			<div style="width:100%;height:0;padding-bottom:61%;position:relative;">
-				<iframe src="https://giphy.com/embed/c7BwRWx7Ya5xu" width="100%" height="100%" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/c7BwRWx7Ya5xu" target="_blank">via GIPHY</a>
-			</p>
+			<img src="/images/screenshots/ticket-search-screenshot-1.png" alt="ticket search"/>
 		</div>
 	</div>
 
@@ -123,12 +107,7 @@ description: A few things that Ramon-Luis has built
 			</p>
 		</div>
 		<div class="project-graphic">
-			<div style="width:100%;height:0;padding-bottom:78%;position:relative;">
-				<iframe src="https://giphy.com/embed/RMxq8WetdsV5m" width="100%" height="100%" allowFullScreen></iframe>
-			</div>
-			<p>
-				<a href="https://giphy.com/gifs/RMxq8WetdsV5m" target="_blank">via GIPHY</a>
-			</p>
+			<img src="/images/screenshots/movie-monster-screenshot-2.png" alt="movie monster"/>
 		</div>
 	</div>
 

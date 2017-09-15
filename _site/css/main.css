@@ -189,13 +189,14 @@ p {
 .project-description {
   margin: 10px 0;
 }
-.project-graphic {
-  border-radius: 7px;
+.project-graphic img {
+  border: 1px solid #C3C6D2;
+  max-width: 100%;
+  height: auto;
+  margin: 5px 0;
+
 }
-.project-graphic iframe {
-  display: block;
-  margin: 15px auto 0 auto;
-}
+
 
 /* ABOUT STYLES */
 .about {    
