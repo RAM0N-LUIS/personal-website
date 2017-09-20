@@ -20,20 +20,21 @@
 		<body>
 			<header class="header">
 	<div class="header-inner-wrapper">
-	<nav>	
-		<!-- ADD MOBILE HERE? -->
-		
-		<a href="/" class="header-title">
-			<h1>Ramon-Luis</h1>
-		</a>
-		<ul class="header-nav nav-links">
-			<li><a href="/">Home</a></li>
+		<nav>
+			<input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+			<label for="mobile-menu" class="show-mobile-menu">Menu</label>
+			<ul class="header-nav nav-links">
+				<li><a href="/">Home</a></li>
 <li><a href="/projects">Projects</a></li>
 <li><a href="https://github.com/ramon-luis?tab=repositories" target="_blank">GitHub</a></li>
 
-		</ul>
-	</nav>
-</div>
+			</ul>
+		</nav>
+		<a href="/" class="header-title">
+			<h1>Ramon-Luis</h1>
+		</a>
+
+	</div>
 	
 </header>
 
@@ -72,6 +73,20 @@
 		</div>
 		<div class="project-graphic">
 			<img src="/images/screenshots/super-bomberman-screenshot-4.png" alt="super bomberman"/>
+		</div>
+	</div>
+
+	<!-- Ticket Search -->
+	<div class="project">
+		<h2 class="project-title">Ticket Search</h2>
+		<a href="https://github.com/ramon-luis/ticket-search" target="_blank">github.com/ramon-luis/ticket-search</a>
+		<div class="project-description">
+			<p>
+				<b>A Java web application</b> that allows users to search for event tickets via SeatGeek's API. 
+			</p>
+		</div>
+		<div class="project-graphic">
+			<img src="/images/screenshots/ticket-search-screenshot-1.png" alt="ticket search"/>
 		</div>
 	</div>
 
@@ -117,27 +132,13 @@
 		</div>
 	</div>
 
-	<!-- Ticket Search -->
-	<div class="project">
-		<h2 class="project-title">Ticket Search</h2>
-		<a href="https://github.com/ramon-luis/ticket-search" target="_blank">github.com/ramon-luis/ticket-search</a>
-		<div class="project-description">
-			<p>
-				<b>A Java web application</b> that allows users to search for event tickets via SeatGeek's API. 
-			</p>
-		</div>
-		<div class="project-graphic">
-			<img src="/images/screenshots/ticket-search-screenshot-1.png" alt="ticket search"/>
-		</div>
-	</div>
-
 	<!-- Movie Monster -->
 	<div class="project">
 		<h2 class="project-title">Movie Monster</h2>
 		<a href="https://github.com/ramon-luis/movie-monster" target="_blank">github.com/ramon-luis/movie-monster</a>
 		<div class="project-description">
 			<p>
-				<b>A Spring Boot web application</b> that tracks information about movies.
+				<b>A Spring Boot web application</b> that tracks information about movies.  The application uses an <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank">MVC</a> architecture to implement <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD</a> operations via HTML and CSS.
 			</p>
 		</div>
 		<div class="project-graphic">
