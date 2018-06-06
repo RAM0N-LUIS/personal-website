@@ -6,15 +6,19 @@
 /*#66BBD1 - teal*/
 /*#1B44C1 - blue*/
 
+/*#F79E02*/
+/*#6CDAEE*/
+/*#1B9CE5*/
+/*#0074E1*/
+/*#10E7DC*/
+
 /* GLOBAL STYLES */
 html {
-  box-shadow: 0 0 0 20px #202837 inset;
+  box-shadow: 0 0 0 20px #66BBD1 inset;
   padding: 20px;
   background-color: #F3F8F2;
-
 }
 body {
-  background-image: url('/images/cool-background.png');
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -30,6 +34,10 @@ p {
   max-width: 650px;
   margin: 5px 0;
 }
+
+a {
+  color: #0074E1;
+}
 .content-container {
   display: flex;
   flex: 1 1 auto;
@@ -37,16 +45,21 @@ p {
   width: 100%;
 }
 
+.special-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* HEADER STYLES */
 .header {
-  border-bottom: 2px solid #C3C6D2;
+  border-bottom: 2px solid #202837;
   font-family: 'Oswald', Helvetica, Arial, Sans;
   position: relative;
   width: 100%;
   z-index: 20;
 }
 .header-title {
-  color: #202837;
+  color: #1B9CE5;
   float: left;
   font-size: 5vh;
   position: absolute;
@@ -72,7 +85,7 @@ p {
 }
 .header-logo:hover,
 .header-logo:active {
-  background-color: #66BBD1;
+  background-color: #F79E02;
 }
 .header-nav {
   float: right;
@@ -93,7 +106,7 @@ p {
 }
 .nav-links li:hover,
 .nav-links li:active {
-  background-color: #66BBD1;
+  background-color: #F79E02;
   border-radius: 5px;
 }
 
@@ -344,7 +357,6 @@ p {
   margin: 5px 0;
 
 }
-
 
 /* ABOUT STYLES */
 .about {
