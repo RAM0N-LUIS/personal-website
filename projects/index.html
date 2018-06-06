@@ -8,22 +8,37 @@ description: A few things that Ramon-Luis has built
 	<div class="projects-header">
 		<h1>Projects</h1>
 		<p>
-			Below are a few things I've built.
+			Nerdy computer stuff that I've built.
 		</p>
 	</div>
 
-	<!-- Chicago Crime & Weather -->
+	<!-- Genomics Annotation Service -->
 	<div class="project">
-		<h2 class="project-title">Big Data: Chicago Crime &amp; Weather</h2>
-		<a href="https://github.com/ramon-luis/chicago-crime-and-weather" target="_blank">github.com/ramon-luis/chicago-crime-and-weather</a>
+		<h2 class="project-title">Genomics Annotation Service</h2>
+		<a href="https://github.com/ramon-luis/genomics-annotation-service" target="_blank">github.com/ramon-luis/genomics-annotation-service</a>
+		<div class="project-description">
+			<p> A genomics annotation service web application built with <a href="https://www.python.org/">Python</a>, <a href="http://flask.pocoo.org/" target="_blank">Flask</a>, and <a href="https://aws.amazon.com/" target="_blank">AWS</a>. A load balancer manages front end web server ec2 nodes that scale-in/scale-out based on web traffic triggers. The back end is comprised of ec2 nodes running the annotation jobs that scale-in/scale-out additional ec2 nodes based on the number of pending job requests. Seperate utility ec2 nodes handle archiving data, thawing/restoring data, and sending email notifications to users. Message queues and topics are used to manage system communication.
+			</p>
+		</div>
+		<div class="project-graphic">
+			<img src="/images/screenshots/genomics-annotation-service-screenshot.png" alt="Genomics Annotation Service App"/>
+		</div>
+		<div class="project-graphic">
+			<img src="/images/screenshots/genomics-annotation-service-architecture.png" alt="Genomics Annotation Service App"/>
+		</div>
+	</div>
+
+	<!-- Relish News -->
+	<div class="project">
+		<h2 class="project-title">Relish News</h2>
+		<a href="https://github.com/ramon-luis/relish-news" target="_blank">github.com/ramon-luis/relish-news</a>
 		<div class="project-description">
 			<p>
-				<b>A big data web application</b> that analyzes the relationship between weather and violent crime in Chicago daily from 2001-2016. The application uses a  <a href="https://en.wikipedia.org/wiki/Lambda_architecture" target="_blank">lambda architecture</a> to process large amounts of data: data from multiple sources is serialized and grouped together into a single, fact-based distrubuted data table with common queries pre-computed in batch processing while a separate speed layer handles new data that has not yet been batch processed.
+				<a href="https://ramon-luis-relish-news.herokuapp.com">Relish News</a> is a news reader web application built with <a href="https://rubyonrails.org/ target="_blank">Ruby on Rails</a> that allows users to save favorite newsfeeds. Users can view news headlines and articles based on topic and source, create an account to favorite topics that feed a custom home page, and toggle between viewing headlines only or article preview cards.  Additionally, the application allows users to view the article text directly within the application without opening the original article.
 			</p>
-			<br />
-			<p>
-				The application was hosted <a href="http://cloud.google.com" target="_blank">Google Cloud<a/> and built with Apache tools, including: <a href="http://hadoop.apache.org/" target="_blank">Hadoop</a>, <a href="http://hbase.apache.org/" target="_blank">HBase<a/>, <a href="http://kafka.apache.org" target="_blank">Kafka</a>, <a href="http://pig.apache.org" target="_blank">Pig</a>, <a href="http://spark.apache.org" target="_blank">Spark</a>, <a href="http://storm.apache.org" target="_blank">Storm</a>, and <a href="http://thrift.apache.org" target="_blank">Thrift<a/>.
-			</p>
+		</div>
+		<div class="project-graphic">
+			<img src="/images/screenshots/relish-news-screenshot-1.png" alt="Relish News App"/>
 		</div>
 	</div>
 
@@ -47,7 +62,7 @@ description: A few things that Ramon-Luis has built
 		<a href="https://github.com/ramon-luis/ticket-search" target="_blank">github.com/ramon-luis/ticket-search</a>
 		<div class="project-description">
 			<p>
-				<b>A Java web application</b> that allows users to search for event tickets via SeatGeek's API. 
+				<b>A Java web application</b> that allows users to search for event tickets via SeatGeek's API.
 			</p>
 		</div>
 		<div class="project-graphic">
@@ -66,6 +81,35 @@ description: A few things that Ramon-Luis has built
 		</div>
 		<div class="project-graphic">
 			<img src="/images/screenshots/jumble-jam-screenshot-3.png" alt="jumble jam"/>
+		</div>
+	</div>
+
+	<!-- Chicago Crime & Weather -->
+	<div class="project">
+		<h2 class="project-title">Big Data: Chicago Crime &amp; Weather</h2>
+		<a href="https://github.com/ramon-luis/chicago-crime-and-weather" target="_blank">github.com/ramon-luis/chicago-crime-and-weather</a>
+		<div class="project-description">
+			<p>
+				<b>A big data web application</b> that analyzes the relationship between weather and violent crime in Chicago daily from 2001-2016. The application uses a  <a href="https://en.wikipedia.org/wiki/Lambda_architecture" target="_blank">lambda architecture</a> to process large amounts of data: data from multiple sources is serialized and grouped together into a single, fact-based distrubuted data table with common queries pre-computed in batch processing while a separate speed layer handles new data that has not yet been batch processed.
+			</p>
+			<br />
+			<p>
+				The application was hosted <a href="http://cloud.google.com" target="_blank">Google Cloud<a/> and built with Apache tools, including: <a href="http://hadoop.apache.org/" target="_blank">Hadoop</a>, <a href="http://hbase.apache.org/" target="_blank">HBase<a/>, <a href="http://kafka.apache.org" target="_blank">Kafka</a>, <a href="http://pig.apache.org" target="_blank">Pig</a>, <a href="http://spark.apache.org" target="_blank">Spark</a>, <a href="http://storm.apache.org" target="_blank">Storm</a>, and <a href="http://thrift.apache.org" target="_blank">Thrift<a/>.
+			</p>
+		</div>
+	</div>
+
+	<!-- Bleeper -->
+	<div class="project">
+		<h2 class="project-title">Bleeper</h2>
+		<a href="https://github.com/ramon-luis/bleeper" target="_blank">github.com/ramon-luis/bleeper</a>
+		<div class="project-description">
+			<p>
+				<a href="https://ramon-luis-bleeper.herokuapp.com">Bleeper</a> is a Twitter clone built with <a href="https://rubyonrails.org/"" target="_blank">Ruby on Rails</a> that adds random $%@#-ing bleeps to user posts.
+			</p>
+		</div>
+		<div class="project-graphic">
+			<img src="/images/screenshots/bleeper-screenshot.png" alt="Bleeper App"/>
 		</div>
 	</div>
 
@@ -89,11 +133,25 @@ description: A few things that Ramon-Luis has built
 		<a href="https://github.com/ramon-luis/zoo-in-there" target="_blank">github.com/ramon-luis/zoo-in-there</a>
 		<div class="project-description">
 			<p>
-				<b>An educational iOS app</b> that contains a gallery of highly unusual animal images and facts.  
+				<b>An educational iOS app</b> that contains a gallery of highly unusual animal images and facts.
 			</p>
 		</div>
 		<div class="project-graphic">
 			<img src="/images/screenshots/zoo-in-there-screenshot-3.png" alt="zoo in there"/>
+		</div>
+	</div>
+
+		<!-- Remember -->
+	<div class="project">
+		<h2 class="project-title">Remember</h2>
+		<a href="https://github.com/ramon-luis/remember" target="_blank">github.com/ramon-luis/remember</a>
+		<div class="project-description">
+			<p>
+				<a href="https://ramon-luis-remember.herokuapp.com">Remember</a> is a simple flash card web application <a href="https://rubyonrails.org/"" target="_blank">Ruby on Rails</a>. Create flashcards that include a front, back, and code section. Use markdown to write formatted text.
+			</p>
+		</div>
+		<div class="project-graphic">
+			<img src="/images/screenshots/remember-screenshot-2.png" alt="Bleeper App"/>
 		</div>
 	</div>
 
